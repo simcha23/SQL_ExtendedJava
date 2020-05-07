@@ -1,4 +1,4 @@
-package com.umuzi.SpringJpa;
+package com.umuzi.SpringJpa.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,53 +9,53 @@ import javax.persistence.Id;
 public class Employees {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer EmployeeID;
+    private Integer employeeId;
 
-    private String FirstName;
+    private String firstName;
 
-    private String LastName;
+    private String lastName;
 
-    private String Email;
+    private String email;
 
-    private String JobTitle;
+    private String jobTitle;
 
-    public Integer getEmployeeID() {
-        return EmployeeID;
+    public Integer getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmployeeID(Integer employeeID) {
-        EmployeeID = employeeID;
+    public void setEmployeeId(Integer employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getJobTitle() {
-        return JobTitle;
+        return jobTitle;
     }
 
     public void setJobTitle(String jobTitle) {
-        JobTitle = jobTitle;
+        this.jobTitle = jobTitle;
     }
 }

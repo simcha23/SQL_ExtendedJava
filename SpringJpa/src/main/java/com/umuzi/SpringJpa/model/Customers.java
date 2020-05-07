@@ -1,92 +1,94 @@
-package com.umuzi.SpringJpa;
+package com.umuzi.SpringJpa.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import java.util.List;
 
 @Entity
 public class Customers {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer CustomerID;
+    private Integer customerId;
 
-    private String FirstName;
+    private String firstName;
 
-    private String LastName;
+    private String lastName;
 
-    private String Gender;
+    private String gender;
 
-    private String Address;
+    private String address;
 
-    private String Email;
+    private String email;
 
-    private String City;
+    private String city;
 
-    private String Country;
+    private String country;
 
-    public Integer getCustomerID() {
-        return CustomerID;
+    public Integer getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomerID(Integer customerID) {
-        CustomerID = customerID;
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getGender() {
-        return Gender;
+        return gender;
     }
 
     public void setGender(String gender) {
-        Gender = gender;
+        this.gender = gender;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public String getCity() {
-        return City;
+        return city;
     }
 
     public void setCity(String city) {
-        City = city;
+        this.city = city;
     }
 
     public String getCountry() {
-        return Country;
+        return country;
     }
 
     public void setCountry(String country) {
-        Country = country;
+        this.country = country;
     }
-
 }
 
