@@ -3,14 +3,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.JoinColumn;
-import java.util.List;
 
 @Entity
 public class Customers {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+//    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer customerId;
 
     private String firstName;
